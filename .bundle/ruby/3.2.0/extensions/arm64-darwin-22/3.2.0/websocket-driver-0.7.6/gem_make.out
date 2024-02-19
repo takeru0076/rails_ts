@@ -1,0 +1,18 @@
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/endotakeru/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-iydz7y sitelibdir\=./.gem.20240219-2676-iydz7y clean
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-iydz7y sitelibdir\=./.gem.20240219-2676-iydz7y
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-iydz7y sitelibdir\=./.gem.20240219-2676-iydz7y install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20240219-2676-iydz7y
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-iydz7y sitelibdir\=./.gem.20240219-2676-iydz7y clean

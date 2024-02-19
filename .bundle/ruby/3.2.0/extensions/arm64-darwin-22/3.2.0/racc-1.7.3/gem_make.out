@@ -1,0 +1,18 @@
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+/Users/endotakeru/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-ezg6wr sitelibdir\=./.gem.20240219-2676-ezg6wr clean
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-ezg6wr sitelibdir\=./.gem.20240219-2676-ezg6wr
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-ezg6wr sitelibdir\=./.gem.20240219-2676-ezg6wr install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240219-2676-ezg6wr/racc
+
+current directory: /Users/endotakeru/do_it_3/.bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240219-2676-ezg6wr sitelibdir\=./.gem.20240219-2676-ezg6wr clean
