@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getTodos } from './api';
 import './App.css';
 import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 
 // Todoの型定義
 type Todo = {
@@ -21,7 +22,7 @@ const App = () => {
         const todosData = await getTodos();
         setTodos(todosData);
       } catch (error) {
-        console.error('Error while fetching todos:', error);
+        console.error(error);
       }
     };
 
@@ -29,14 +30,10 @@ const App = () => {
   }, []);
 
   return (
-    <div className="container">
-      <h1>ToDo List</h1>
+    <div>
+      <h1>Todo App</h1>
       <TodoForm />
-      <ul>
-        {todos.map((todo: any) => (
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
+      <TodoList todos={todos} />
     </div>
   );
 };
