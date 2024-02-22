@@ -30,7 +30,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo }) => {
           <h3>{todo.title}</h3>
           <p>{todo.description}</p>
           <button onClick={handleEditClick}>Edit</button>
-          </div>
+        </div>
       ) : (
         <TodoEditForm todo={todo} onEdit={handleEditCancel} />
       )}

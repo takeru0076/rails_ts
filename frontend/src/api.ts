@@ -24,7 +24,7 @@ export const createTodo = async (todoData: any) => {
 
 export const updateTodo = async (todoId: number, todoData: any) => {
   try {
-    const response = await axios.put(`${API_BASE_URL}/todos/&{todoId}`, todoData);
+    const response = await axios.put(`${API_BASE_URL}/todos/${todoId}`, todoData);
     return response.data;
   } catch (error) {
     console.error('Error while updating todo:', error);
