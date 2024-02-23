@@ -27,9 +27,12 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onDelete }) => {
 
   const handleDeleteClick = async () => {
     try {
-      await deleteTodo(todo.id);
+      const confirmDelete = window.confirm("本当に削除しますか？");
+      if (confirmDelete) {
+        await deleteTodo(todo.id);
 
-      onDelete(todo.id);
+        onDelete(todo.id);
+      }
     } catch (error) {
       console.error(error);
     }
