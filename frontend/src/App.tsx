@@ -4,7 +4,6 @@ import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 
-// Todoの型定義
 type Todo = {
   id: number;
   title: string;
@@ -13,7 +12,6 @@ type Todo = {
 };
 
 const App = () => {
-  // Todoリストの初期値を空の配列に設定
   const [todos, setTodos] = useState<Todo[]>([]);
 
   useEffect(() => {
@@ -29,11 +27,20 @@ const App = () => {
     fetchTodos();
   }, []);
 
+  // Todo削除後、削除されたTodoを除いたTodoリストを表示する関数
+  const handleTodoDelete = async (todoId: number) => {
+    try {
+      setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== todoId));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
-    <div>
-      <h1>Todo App</h1>
+    <div className="container">
+      <h1>ToDo List</h1>
       <TodoForm />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} onTodoDelete={handleTodoDelete} />
     </div>
   );
 };
